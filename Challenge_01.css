@@ -1,0 +1,302 @@
+/*Suppression des scrolls*/
+body {
+  overflow: hidden;
+}
+
+/* Ciblage page accueil pour changer fond de page*/
+.bodyaccueil {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  margin: 0;
+}
+
+/* Modification de la police*/
+@font-face {
+  font-family: montserrat;
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+
+/* Liens des pages */
+nav a {
+  font-family: montserrat;
+  text-decoration: none;
+  margin-right: 10vw;
+  color: #373737;
+  font-size: 3vh;
+}
+
+/* En-tete du body en flex s'appliquant à toutes les pages */
+#Hautdepage {
+  margin-left: 0;
+  margin-right: 0;
+  height: 4.9vmax;
+  width: 100vmax;
+  background-color: #C0B283;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('img/olivier-logo2.png');
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Centre de la page accueil*/
+#Milieudepage {
+  position: absolute;
+  background-image: url('img/pattern_01.jpg');
+  left: 20%;
+  top: 28%;
+  height: 25vmax;
+  width: 60vmax;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Paragraphe du centre page d'accueil*/
+#Milieudepage p {
+  background-position: center;
+  text-align: center;
+  position: absolute;
+  left: 22vw;
+  top: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+/* Image du centre page d'accueil*/
+#Milieudepage img {
+  height: 12vh;
+  width: 20vw;
+  position: absolute;
+  left: 50%;
+  top: 3%;
+}
+
+/* du centre page d'accueil*/
+#lienservices {
+  position: absolute;
+  margin-top: 2vmax;
+  left: 62%;
+  top: 88%;
+}
+
+/*Commnande qui change ts les titres*/
+.service h2 {
+  position: absolute;
+  right: 85%;
+  top: 11%;
+  text-align: right;
+  width: 100%;
+}
+
+/*Ciblage de la page page services*/
+.services {
+  background-image: url('img/pattern_01.png');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Div parent des montres*/
+.galerie_de_montres {
+  height: 100vmax;
+  width: 100vmax;
+  background-repeat: no-repeat;
+  align-items: center;
+  position: absolute;
+}
+
+.montres {
+  background-image: url('img/img_03.jpg');
+  background-size: cover;
+  position: relative;
+  height: 17vmax;
+  width: 45.5vmax;
+  top: 4.8%;
+  left: 12%;
+}
+
+/* Au survol on voit la source de l'image fournit */
+.montres:hover {
+  background-image: url('img/img_11.jpg');
+}
+
+.montres_a_gousset {
+  background-image: url('img/img_08.jpg');
+  background-size: cover;
+  position: relative;
+  height: 15vmax;
+  width: 22.5vmax;
+  top: 5.9%;
+  left: 12%;
+}
+
+.montres_a_gousset:hover {
+  background-image: url('img/img_11.jpg');
+}
+
+.reparation {
+  background-image: url('img/img_11.jpg');
+  position: relative;
+  background-size: cover;
+  position: relative;
+  height: 15vmax;
+  width: 21.8vmax;
+  top: -9.1%;
+  left: 35.7%;
+}
+
+.reparation:hover {
+  background-image: url('img/img_08.jpg');
+}
+
+.horlogerie_monumentale {
+  background-image: url('img/img_05.jpg');
+  position: absolute;
+  background-size: cover;
+  height: 33.1vmax;
+  width: 29vmax;
+  top: 4.8%;
+  left: 60%;
+}
+
+.horlogerie_monumentale:hover {
+  background-image: url('img/img_11.jpg');
+}
+
+/* Css de l'image im_09.jpg */
+.img09 {
+  margin: 0;
+  padding: 0;
+  background-image: url('img/img_09.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ciblage page contact pour changer fond de page*/
+.Contact {
+  margin: 0;
+  padding: 0;
+  background-image: url('img/.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Ciblage de ma page a propos*/
+.bodyapropos {
+  background-image: url('img/img_09.jpg');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about{
+  display: flex;
+  width:100%;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.about p, .about .titre_h2{
+  color:white;
+}
+
+.olivier_horlogerie{
+  background-color: rgba(192,178,131,0.7);
+  width:40%;
+  padding:2vmax;
+  border:1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.olivier_biographie{
+  background-color: rgba(192,178,131,0.7);
+  padding:2vmax;
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.olivier_biographie img{
+  height: 15vmax;
+  width: 20vmax;
+}
+/* Description horlogerie*/
+.olivier {
+  height: 20vh;
+  width: 40vw;
+  color:white;
+  text-align: center;
+  left: 15%;
+  top: 20%;
+}
+
+.logo{
+  display:flex;
+  justify-content: center;
+  height:10vh;
+  width:10vw;
+}
+
+.logo a .soc{
+  width: 80px;
+  height: 80px;
+
+}
+/* Image Olivier */
+.olivier{
+  height: 15vmax;
+  width: 25vmax;
+  top: 22.5%;
+  left: 65%;
+  background-image: url('img/olivier.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*.olivier_biographie {
+  border:2px;
+  color:#373737;
+  height: 10vh;
+  width: 40vw;
+  text-align: center;
+  left: 45%;
+  top: 50%;
+}
+*/
+/*Formulaire de renseignements*/
+#formulaire {
+  position: absolute;
+  top: 25%;
+  left: 9.5%;
+  height: 20vh;
+  width: 20vw;
+  top:
+}
+
+/*Intégration de la géolocalsation du magasin*/
+.geolocalition iframe {
+  position: absolute;
+  top: 33%;
+  left: 37%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 55vw;
+}

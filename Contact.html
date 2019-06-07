@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="Challenge_01.css" rel="stylesheet">
+
+  <title>Contact</title>
+</head>
+
+<body>
+
+  <body class="Contact">
+    <div id="Hautdepage">
+      <nav>
+        <a href="Challenge_01.html">Accueil</a>
+        <a href="Services.html">Services</a>
+        <a href="A propos.html">A propos</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div id="formulaire">
+
+
+      <div id="after_submit"></div>
+      <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+        <div class="row">
+          <label class="required" for="name">Nom:</label><br />
+          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="first name">Prénom:</label><br />
+          <input id="name" class="input" name="first name" type="text" value="" size="30" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+          <label class="required" for="email">Email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="phone">Téléphone:</label><br />
+          <input id="phone" class="input" name="phone" type="text" value="" size="30" /><br />
+          <span id="phone_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+          <label class="required" for="message">Message:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+
+        <input id="submit_button" type="submit" value="Envoyer Message" />
+      </form>
+    </div>
+
+    <div class="geolocalition">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.208740156827!2d1.863304815338345!3d50.9383525795457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc3f66f7a28cd3%3A0x121be0ed50e558db!2s429+Rue+Gutenberg%2C+62100+Calais!5e0!3m2!1sfr!2sfr!4v1559231482003!5m2!1sfr!2sfr"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </body>
+
+</html>
